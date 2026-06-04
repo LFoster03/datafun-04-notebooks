@@ -116,7 +116,7 @@ uvx pre-commit run --all-files
 uvx pre-commit run --all-files
 
 # run the module to verify the environment (.venv)
-uv run python -m datafun.app_case
+uv run python -m datafun.app_foster
 
 # do chores
 uv run ruff format .
@@ -128,8 +128,24 @@ uv run python -m zensical build
 # save progress
 git add -A
 git commit -m "update"
-git push -u origin main
+git push -u origin
 ```
+
+## Technical Modification
+
+I extended the summary section of the analysis to identify which penguin species has the highest average body mass.
+
+### Why
+
+The original project calculated descriptive statistics and grouped summaries but did not highlight which species was largest on average. I wanted to turn the grouped statistics into a more meaningful finding.
+
+### What Changed
+
+I used pandas `groupby()` and `mean()` to calculate the average body mass for each species. I then used `idxmax()` to identify the species with the highest average body mass.
+
+### Results
+
+After running the project, the summary reported the species with the highest average body mass and its average weight. This provided a clearer interpretation of the grouped analysis results.
 
 </details>
 
