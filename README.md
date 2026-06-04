@@ -145,7 +145,17 @@ I used pandas `groupby()` and `mean()` to calculate the average body mass for ea
 
 ### Results
 
-After running the project, the summary reported the species with the highest average body mass and its average weight. This provided a clearer interpretation of the grouped analysis results.
+After running the project, the summary reported the species with the highest average body mass and its average weight - Species with highest average body mass: Gentoo (5076.02 g). This provided a clearer interpretation of the grouped analysis results.
+
+## Apply to New Problem
+I used a new dataset (tips). I added a new grouped summary statistic to the exploratory data analysis workflow. Specifically, I calculated the average tip grouped by day and identified the day with the highest average tip value.
+
+This was implemented using pandas groupby() on the day column and computing the mean of the tip column. I then used idxmax() and max() to identify and display the day with the highest average tip.
+
+### Results
+Technical Modification: Expanded Grouped Analysis of Tip Behavior
+
+For this project, I implemented a technical modification by extending the grouped analysis in the EDA workflow for the tips dataset. In addition to the original aggregation of average tip amounts by day of the week, I added a second grouping analysis based on smoker status. This change introduced a new perspective on the data by comparing average tip amounts between smokers and non-smokers using a groupby() aggregation on the tip column. The modification enhanced the analysis by allowing multiple categorical dimensions to be explored rather than relying on a single grouping variable. After running the updated script, I observed differences in average tipping behavior across both days and smoker categories, which suggests that social or contextual factors may influence tipping patterns. This extension improved the depth of the exploratory data analysis and provided additional insight for potential follow-up questions, such as comparing tipping behavior across meal times or party sizes.
 
 </details>
 
