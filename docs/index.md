@@ -52,7 +52,8 @@ Two main exploratory experiments were conducted as a technical modification to t
 These modifications extended the original analysis beyond a single grouping dimension and allowed comparison across multiple categorical variables.
 
 ### Results
-The analysis showed that tipping behavior varies across days of the week, with one day producing a higher average tip than others. Additionally, differences were observed between smoker and non-smoker groups, indicating variation in tipping patterns across customer segments.
+The analysis showed that tipping behavior varies across days of the week, with Saturday producing a higher average tip than others. Additionally, differences were observed between smoker and non-smoker groups, with the average tip of a smoker being slightly higher than the average tip of a non-smoker (smoker: 3, non-smoker: 2.99).
+
 
 ### Interpretation
-The results suggest that tipping behavior is influenced by contextual and demographic factors such as day of the week and smoking status. This implies that customer behavior is not uniform and may be shaped by social setting, group composition, or dining patterns. From a business intelligence perspective, these insights could help restaurant management identify peak tipping periods and better understand customer segments that contribute more to revenue through gratuities. This information could be used to optimize staffing, promotions, or service strategies
+The results suggest that tipping behavior is influenced by contextual and demographic factors such as day of the week and smoking status. This implies that customer behavior is not uniform and may be shaped by social setting, group composition, or dining patterns. From a business intelligence perspective, these insights could help restaurant management identify peak tipping periods and better understand customer segments that contribute more to revenue through gratuities. This information could be used to optimize staffing, promotions, or service strategies to increase revenue.
