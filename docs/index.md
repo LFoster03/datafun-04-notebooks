@@ -23,3 +23,36 @@ to get these projects running on your machine.
   - [RESOURCES.md](./module/RESOURCES.md)
   - [seaborn-datasets.md](./module/seaborn-datasets.md)
   - [TROUBLESHOOTING.md](./module/TROUBLESHOOTING.md)
+
+## Custom Project
+
+### Dataset
+This project uses the Seaborn built-in “tips” dataset, which contains 244 restaurant bills with attributes such as total bill amount, tip amount, customer gender, smoking status, day of the week, time of day (lunch/dinner), and party size. The data represents tipping behavior in a restaurant setting and is commonly used for exploratory data analysis and statistical learning exercises.
+
+### Signals
+The primary signals used in this analysis include:
+
+- total_bill (continuous numeric variable)
+- tip (continuous numeric variable)
+- day (categorical: Thur, Fri, Sat, Sun)
+- smoker (categorical: Yes/No)
+- size (numeric: party size)
+
+Additional derived signals were created using groupby aggregations:
+
+- Average tip by day
+- Average tip by smoker status
+
+### Experiments
+Two main exploratory experiments were conducted as a technical modification to the base analysis:
+
+1. Grouping tips by day of the week to identify which days have the highest average tipping behavior.
+2. Adding a second grouping by smoker status to compare average tip amounts between smokers and non-smokers.
+
+These modifications extended the original analysis beyond a single grouping dimension and allowed comparison across multiple categorical variables.
+
+### Results
+The analysis showed that tipping behavior varies across days of the week, with one day producing a higher average tip than others. Additionally, differences were observed between smoker and non-smoker groups, indicating variation in tipping patterns across customer segments.
+
+### Interpretation
+The results suggest that tipping behavior is influenced by contextual and demographic factors such as day of the week and smoking status. This implies that customer behavior is not uniform and may be shaped by social setting, group composition, or dining patterns. From a business intelligence perspective, these insights could help restaurant management identify peak tipping periods and better understand customer segments that contribute more to revenue through gratuities. This information could be used to optimize staffing, promotions, or service strategies
